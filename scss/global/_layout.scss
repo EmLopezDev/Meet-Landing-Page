@@ -1,0 +1,74 @@
+@use "../utils/" as u;
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    max-width: u.rem(1800);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: u.rem(80) u.rem(80) 0;
+}
+
+main {
+    width: 100%;
+    max-width: u.rem(1800);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+}
+
+.intro {
+    display: flex;
+    gap: u.rem(32);
+    padding: u.rem(80) 0 u.rem(64);
+
+    &__img--tablet {
+        display: none;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__heading {
+        font-size: u.rem(64);
+    }
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    padding: u.rem(56) u.rem(80) u.rem(72);
+
+    &__img--wrapper {
+        display: flex;
+        gap: u.rem(32);
+    }
+    &__img {
+        max-width: u.rem(256);
+        height: u.rem(256);
+    }
+}
