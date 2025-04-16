@@ -39,6 +39,17 @@ section {
     display: flex;
 }
 
+button {
+    padding: u.rem(16) u.rem(40);
+    border-radius: u.rem(29);
+    border: none;
+    font-size: u.rem(16);
+    font-weight: var(--font-weight-black);
+    line-height: var(--line-height-medium);
+    letter-spacing: var(--font-letter-spacing);
+    color: var(--color-white);
+}
+
 .intro {
     display: flex;
     gap: u.rem(32);
@@ -55,6 +66,41 @@ section {
 
     &__heading {
         font-size: u.rem(64);
+        font-weight: var(--font-weight-black);
+        line-height: var(--line-height-small);
+        letter-spacing: var(--font-letter-spacing);
+        text-align: center;
+        margin-bottom: u.rem(32);
+        color: var(--color-slate-900);
+    }
+
+    &__summary {
+        font-size: u.rem(18);
+        font-weight: var(--font-weight-medium);
+        line-height: var(--line-height-medium);
+        letter-spacing: var(--font-letter-spacing);
+        text-align: center;
+        margin-bottom: u.rem(32);
+        color: var(--color-slate-600);
+    }
+
+    &__buttons--wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: u.rem(17);
+    }
+
+    &__button--teal {
+        background-color: var(--color-cyan-600);
+    }
+
+    &__button--version {
+        color: var(--color-cyan-300);
+    }
+
+    &__button--purple {
+        background-color: var(--color-purple-600);
     }
 }
 
