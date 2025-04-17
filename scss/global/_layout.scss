@@ -48,6 +48,8 @@ button {
     line-height: var(--line-height-medium);
     letter-spacing: var(--font-letter-spacing);
     color: var(--color-white);
+    min-width: u.rem(193);
+    height: u.rem(56);
 }
 
 .intro {
@@ -107,14 +109,95 @@ button {
 .feature {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: u.rem(56) u.rem(80) u.rem(72);
 
     &__img--wrapper {
         display: flex;
         gap: u.rem(32);
+        padding: u.rem(64) 0;
     }
     &__img {
         max-width: u.rem(256);
-        height: u.rem(256);
+        width: 25vw;
+    }
+
+    &__info {
+        max-width: u.rem(544);
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__heading {
+        color: var(--color-slate-900);
+        font-weight: var(--font-weight-black);
+        font-size: u.rem(40);
+        line-height: var(--line-height-small);
+        letter-spacing: var(--font-letter-spacing);
+        margin-bottom: u.rem(32);
+        padding: 0 u.rem(50);
+
+        &--small {
+            color: var(--color-cyan-600);
+            font-size: u.rem(16);
+            letter-spacing: u.rem(4);
+            text-transform: uppercase;
+        }
+    }
+
+    &__details {
+        font-weight: var(--font-weight-medium);
+        font-size: u.rem(18);
+        line-height: var(--line-height-small);
+        letter-spacing: var(--font-letter-spacing);
+        color: var(--color-slate-600);
+    }
+}
+
+.experience {
+    display: flex;
+    justify-content: space-evenly;
+    gap: u.rem(32);
+    width: 100%;
+    position: relative;
+    background-image: url("../../assets/desktop/image-footer.jpg");
+    background-size: cover;
+    color: var(--color-white);
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(77, 150, 169, 0.8);
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        min-width: u.rem(1200);
+        gap: u.rem(60);
+        padding: u.rem(112) u.rem(80);
+        z-index: 1;
+    }
+
+    &__header {
+        color: var(--color-white);
+        font-weight: var(--font-weight-black);
+        font-size: u.rem(40);
+        line-height: var(--line-height-small);
+        letter-spacing: var(--font-letter-spacing);
+    }
+
+    &__details {
+        font-weight: var(--font-weight-medium);
+        font-size: u.rem(18);
+        line-height: var(--line-height-small);
+        letter-spacing: var(--font-letter-spacing);
+    }
+
+    &__button {
+        background-color: var(--color-purple-600);
     }
 }
