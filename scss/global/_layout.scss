@@ -55,10 +55,22 @@ button {
 .intro {
     display: flex;
     gap: u.rem(32);
-    padding: u.rem(80) 0 u.rem(64);
+    padding: u.rem(80) 0 u.rem(128);
 
     &__img--tablet {
         display: none;
+        // @include u.breakpoint(medium) {
+        //     display: block;
+        // }
+    }
+
+    &__img--left,
+    &__img--right {
+        width: 30%;
+
+        // @include u.breakpoint(medium) {
+        //     display: none;
+        // }
     }
 
     &__details {
@@ -110,11 +122,12 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: u.rem(56) u.rem(80) u.rem(72);
+    padding: u.rem(56) u.rem(80) u.rem(200);
 
     &__img--wrapper {
         display: flex;
         gap: u.rem(32);
+        margin-top: u.rem(32);
         padding: u.rem(64) 0;
     }
     &__img {
@@ -225,4 +238,9 @@ button {
         position: absolute;
         top: u.rem(-80);
     }
+}
+
+.absolute__divider {
+    position: absolute;
+    top: u.rem(-28);
 }
