@@ -136,6 +136,10 @@ button {
 
     &__button--teal {
         background-color: var(--color-cyan-600);
+
+        &:hover {
+            background-color: #71c0d4;
+        }
     }
 
     &__button--version {
@@ -144,6 +148,10 @@ button {
 
     &__button--purple {
         background-color: var(--color-purple-600);
+
+        &:hover {
+            background-color: #b18bdd;
+        }
     }
 }
 
@@ -302,6 +310,14 @@ button {
 
     &__button {
         background-color: var(--color-purple-600);
+
+        &--version {
+            color: var(--color-purple-300);
+        }
+
+        &:hover {
+            background-color: #b18bdd;
+        }
     }
 }
 
