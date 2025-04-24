@@ -48,6 +48,7 @@ button {
     font-weight: var(--font-weight-black);
     line-height: var(--line-height-medium);
     letter-spacing: var(--font-letter-spacing);
+    font-family: var(--font-family);
     color: var(--color-white);
     min-width: u.rem(193);
     height: u.rem(56);
@@ -252,11 +253,11 @@ button {
     color: var(--color-white);
 
     @include u.breakpoint(medium) {
-        background-image: url("../../assets/tablet/image-footer.jpg");
+        background-image: url("../assets/tablet/image-footer.jpg");
     }
 
     @include u.breakpoint(small) {
-        background-image: url("../../assets/mobile/image-footer.jpg");
+        background-image: url("../assets/mobile/image-footer.jpg");
     }
 
     &::before {
