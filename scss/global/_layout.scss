@@ -248,16 +248,16 @@ button {
     gap: u.rem(32);
     width: 100%;
     position: relative;
-    background-image: url("/assets/desktop/image-footer.jpg");
+    background-image: url("./../../assets/desktop/image-footer.jpg");
     background-size: cover;
     color: var(--color-white);
 
     @include u.breakpoint(medium) {
-        background-image: url("/assets/tablet/image-footer.jpg");
+        background-image: url("./../../assets/tablet/image-footer.jpg");
     }
 
     @include u.breakpoint(small) {
-        background-image: url("/assets/mobile/image-footer.jpg");
+        background-image: url("./../../assets/mobile/image-footer.jpg");
     }
 
     &::before {
